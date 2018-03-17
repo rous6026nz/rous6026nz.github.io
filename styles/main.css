@@ -38,11 +38,33 @@ h5 {
     color: #000;
 }
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: tablet-gothic-compressed, sans-serif;
+    font-style: normal;
     margin-bottom: 5rem;
+}
+.container__intro h1 {
+    font-size: 5rem;
+    color: #fff;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 1em;
+    margin-bottom: 0;
+}
+.container__intro h1:after {
+    content:'...';
+    word-wrap: none;
+    white-space: nowrap;
 }
 p {
     margin: 1rem 0;
+}
+.container__intro p {
+    font-size: 1.2rem;
+    line-height: .5rem;
+    font-family: tablet-gothic, sans-serif;
+    font-style: italic;
+    font-weight: 200;
 }
 .blog__header {
     font-size: .8rem;
@@ -82,7 +104,7 @@ p {
 }
 .nav__item-container--item--link {
     width: 100%;
-    transition: background .6s ease-in;
+    transition: background .3s ease-in;
 }
 .nav__item-container--item--link:hover {
     background: rgba(0,0,0,.2);
@@ -90,14 +112,46 @@ p {
 .is_selected {
     border-bottom: 4px solid rgba(255,255,255,.5);
 }
+
+/* Desktop */
+@media screen and (min-width: 48rem) {
+    /* Desktop navigation */
+    .nav__item-container--dropdown {
+        transition: display .2s ease;
+        -webkit-transition: display .2s ease;
+        -moz-transition: display .2s ease;
+        display: none;
+        background: rgba(39,39,39,.9);
+    }
+    .nav__item-container--dropdown li {
+        width: 100%;
+    }
+    .nav__item-container--dropdown li:hover {
+        background: rgb(39,39,39);
+    }
+    .nav__item-container--item:hover .nav__item-container--dropdown {
+        display: block;
+    }
 /* END: Navigation */
 
 /* Base styles */
 .container {
-    width: 90%;
-    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 15% 10%;
+    width: 100%;
+    margin: 5rem 0;
+    padding: 0;
 }
+.container__intro {
+    color: #fff;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    background: #c00001;
+    padding: 2rem;
+}
+
 .blog {
+    grid-column: 2 / -2;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -133,10 +187,15 @@ p {
 
 /* Desktop */
 @media screen and (min-width: 48rem) {
+
     .container {
-        width: 45rem;
+        
+    }
+    .container__intro {
+        grid-column: 1 / span 4;
     }
     .blog {
+        grid-column: 2 / -2;
         flex-direction: row;
     }
     .blog__header {
@@ -154,7 +213,7 @@ p {
 /* Large Desktop */
 @media screen and (min-width: 61.75rem) {
     .container {
-        width: 61.75rem;
+        
     }
     .blog__header {
         width: 25%;

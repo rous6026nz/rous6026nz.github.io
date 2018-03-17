@@ -10,15 +10,29 @@
 <body>
     <header>
         <nav class="nav">
-                <ul class="nav__item-container">
-                    <li class="nav__item-container--item"><a href="../index.html" class="nav__item-container--item--link">Home</a></li>
-                    <li class="nav__item-container--item is_selected">Reflection</li>
-                    <li class="nav__item-container--item"><a href="c1-time-and-habits-blog.html" class="nav__item-container--item--link">Time & Habits</a></li>
-                </ul>
-            </nav>
+            <ul class="nav__item-container">
+                <li class="nav__item-container--item"><a href="../index.html" class="nav__item-container--item--link">Home</a></li>
+                <li class="nav__item-container--item reflection is_selected">
+                    Reflection
+                    <ul class="nav__item-container--dropdown">
+                        <li class="nav__item-container--item"><a href="#" class="nav__item-container--item--link">C1 Reflection</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item-container--item technical">
+                    Technical
+                    <ul class="nav__item-container--dropdown">
+                        <li class="nav__item-container--item"><a href="c1-time-and-habits-blog.html" class="nav__item-container--item--link">Time & Habits</a></li>  
+                        <li class="nav__item-container--item"><a href="t2-html-css-dom-p1.html" class="nav__item-container--item--link">Udacity Reflection</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
     <div class="container">
-        <h1>Reflection</h1>
+        <div class="container__intro">
+            <h1>Reflection</h1>
+            <p>c1 relection post</p>
+        </div>
 
         <article class="blog">
             <header class="blog__header">

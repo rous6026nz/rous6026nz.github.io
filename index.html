@@ -8,15 +8,31 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <nav class="nav">
-        <ul class="nav__item-container">
-            <li class="nav__item-container--item is_selected">Home</li>
-            <li class="nav__item-container--item"><a href="blog/c1-reflection-blog.html" class="nav__item-container--item--link">Reflection</a></li>
-            <li class="nav__item-container--item"><a href="blog/c1-time-and-habits-blog.html" class="nav__item-container--item--link">Time & Habits</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="nav">
+            <ul class="nav__item-container">
+                <li class="nav__item-container--item  is_selected"><a href="../index.html" class="nav__item-container--item--link">Home</a></li>
+                <li class="nav__item-container--item reflection">
+                    Reflection
+                    <ul class="nav__item-container--dropdown">
+                        <li class="nav__item-container--item"><a href="blog/c1-reflection-blog.html" class="nav__item-container--item--link">C1 Reflection</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item-container--item technical">
+                    Technical
+                    <ul class="nav__item-container--dropdown">
+                        <li class="nav__item-container--item"><a href="blog/c1-time-and-habits-blog.html" class="nav__item-container--item--link">Time & Habits</a></li>  
+                        <li class="nav__item-container--item"><a href="blog/t2-html-css-dom-p1.html" class="nav__item-container--item--link">Udacity Reflection</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
-
+        <div class="container__intro">
+            <h1>Welcome to Bloggers Delight</h1>
+            <p>a Dev Academy journey</p>
+        </div>
     </div>
     <footer class="blog__footer">
         <div class="blog__footer--container">
