@@ -193,7 +193,7 @@ p {
 }
 .nav__item-container__dropdown--reflection,
 .nav__item-container__dropdown--technical {
-    max-height: 0;
+    max-height: 10rem;
     overflow: hidden;
     -webkit-transition: max-height .2s;
     -o-transition: max-height .2s;
