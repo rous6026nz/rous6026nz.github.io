@@ -9,20 +9,49 @@
 </head>
 <body>
     <header>
-        <nav class="nav">
-            <span class="nav__hamburger-icon" id="menu-burger">Menu</span>
-            <ul class="nav__item-container">
-                <li><span class="nav__close-icon" id="menu-close">&#x2573;</span></li>
+        <nav 
+        id="nav"
+        class="nav"
+        >
+            <a href="#nav__item-container" 
+            class="hamburger-icon"
+            role="button"
+            aria-expanded="false"
+            aria-controls="nav__item-container"
+            aria-label="Open main menu">
+                <span class="sr-only">Open main menu</span>
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+            <ul 
+            id="nav__item-container"
+            class="nav__item-container"
+            role="navigation"
+            aria-expanded="false"
+            aria-label="Main menu"
+            >
+                <li><a href="#nav__item--container"
+                    class="nav__close-icon" 
+                    id="menu-close"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="nav__item--container"
+                    aria-label="Close main menu"
+                    >
+                        &#x2573;
+                    </a>
+                </li>
                 <li class="nav__item-container--item  is_selected"><a href="../index.html" class="nav__item-container--item--link">Logo</a></li>
                 <li class="nav__item-container--item reflection">
-                    Reflection
-                    <ul class="nav__item-container__dropdown">
+                    <a href="#reflection" aria-expanded="false" aria-controls="nav__item-container__dropdown--reflection">Reflection</a>
+                    <ul id="reflection" class="nav__item-container__dropdown nav__item-container__dropdown--reflection" role="navigation" aria-expanded="false" aria-label="Level 2 menu">
                         <li class="nav__item-container__dropdown--item"><a href="blog/c1-reflection-blog.html" class="nav__item-container--item--link">C1 Reflection</a></li>
                     </ul>
                 </li>
                 <li class="nav__item-container--item technical">
-                    Technical
-                    <ul class="nav__item-container__dropdown">
+                    <a href="#technical" aria-expanded="false" aria-controls="nav__item-container__dropdown--technical">Technical</a>
+                    <ul id="technical" class="nav__item-container__dropdown nav__item-container__dropdown--technical" role="navigation" aria-expanded="false" aria-label="Level 2 menu">
                         <li class="nav__item-container__dropdown--item"><a href="blog/c1-time-and-habits-blog.html" class="nav__item-container--item--link">Time & Habits</a></li>  
                         <li class="nav__item-container__dropdown--item"><a href="blog/t2-html-css-dom-p1.html" class="nav__item-container--item--link">Udacity Reflection</a></li>
                     </ul>

@@ -71,7 +71,7 @@ p {
 }
 .container__intro p {
     font-size: 1.2rem;
-    line-height: .5rem;
+    line-height: 1.2rem;
     font-family: tablet-gothic, sans-serif;
     font-style: italic;
     font-weight: 200;
@@ -89,6 +89,42 @@ p {
 /* END: Typography */
 
 /* Navigation styles */
+.hamburger-icon {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    display: inline-block;
+    color: #ffffff;
+    border-radius: .5rem;
+    padding: 0 .8rem;
+    margin: .5rem 1rem;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    cursor: pointer;
+    /* border: 1px solid #fff; */
+}
+.hamburger-icon div {
+    width: 1.5rem;
+    height: .15rem;
+    background: #ffffff;
+    margin: .3rem 0;
+}
+.hamburger-icon div:nth-of-type(2) {
+    width: 1rem;
+}
+/* Screen reader only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
 .nav {
     position: fixed;
     top: 0;
@@ -96,18 +132,6 @@ p {
     width: 100%;
     background: rgba(39,39,39,1);
     height: 3rem;
-}
-.nav__hamburger-icon {
-    display: block;
-    width: 6rem;
-    color: #ffffff;
-    border: 2px solid rgba(255,255,255,.6);
-    border-radius: .5rem;
-    padding: 0 .8rem;
-    margin: .5rem 1rem;
-    text-align: center;
-    text-transform: capitalize;
-    cursor: pointer;
 }
 .nav__close-icon {
     display: block;
@@ -120,14 +144,34 @@ p {
     font-size: 1.5rem;
     font-weight: 100;
     cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: color .2s ease;
+    -moz-transition: color .2s ease;
+    -o-transition: color .2s ease;
+    -ms-transition: color .2s ease;
+    transition: color .2s ease;
+}
+.nav__close-icon:hover {
+    color: yellow;
 }
 .nav__item-container {
     position: absolute;
     top: 0;
+    z-index: 1000;
     background: rgba(39,39,39,1);
     width: 100vw;
     height: 100vh;
-    /* left: -100%; */
+    left: -100vw;
+    -webkit-transition: left .2s ease;
+    -moz-transition: left .2s ease;
+    -o-transition: left .2s ease;
+    -ms-transition: left .2s ease;
+    transition: left .2s ease;
+}
+.nav__item-container:target,
+.nav__item-container[aria-expanded="true"] {
+    left: 0;
+    outline: none;
 }
 .nav__item-container--item {
     border-bottom: 1px solid rgba(255,255,255,.5);
@@ -140,22 +184,33 @@ p {
    display: block;
    width: 100%;
 }
-.nav__item-container__dropdown {
-    display: none;
-    -webkit-transition: display .2s ease;
-    -moz-transition: display .2s ease;
-    transition: display .2s ease;
-}
-.nav__item-container--item:hover .nav__item-container__dropdown {
+.reflection a,
+.technical a {
+    color: #ffffff;
+    text-decoration: none;
     display: block;
+    width: 100%;
+}
+.nav__item-container__dropdown--reflection,
+.nav__item-container__dropdown--technical {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height .2s;
+    -o-transition: max-height .2s;
+    transition: max-height .2s;
 }
 .nav__item-container__dropdown--item {
     text-indent: 2rem;
 }
-
 .nav__item-container--item:hover,
 .nav__item-container--item--link:hover {
     cursor: pointer;
+}
+#reflection:target .nav__item-container__dropdown--reflection,
+#reflection[aria-expanded="true"] .nav__item-container__dropdown--reflection,
+#technical:target .nav__item-container__dropdown--technical,
+#technical[aria-expanded="true"] .nav__item-container__dropdown--technical {
+    max-height: 10rem;
 }
 
 
@@ -165,7 +220,7 @@ p {
     .nav {
         background: rgba(39,39,39,.6);
     }
-    .nav__hamburger-icon {
+    .hamburger-icon {
         display: none;
     }
     .nav__close-icon {
@@ -202,11 +257,12 @@ p {
         border-bottom: 4px solid rgba(255,255,255,.5);
     }
     .nav__item-container__dropdown {
+        display: none;
+        max-height: 0;
+        background: rgba(39,39,39,.9);
         transition: display .2s ease;
         -webkit-transition: display .2s ease;
         -moz-transition: display .2s ease;
-        display: none;
-        background: rgba(39,39,39,.9);
     }
     .nav__item-container__dropdown--item {
         width: 100%;
@@ -219,6 +275,7 @@ p {
     }
     .nav__item-container--item:hover .nav__item-container__dropdown {
         display: block;
+        max-height: 10rem;
     }
 }
 /* END: Navigation */
