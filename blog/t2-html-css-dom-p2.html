@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blogger Delight | Udacity Reflection - P2</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <header>
+        <nav id="nav" class="nav">
+            <a href="#nav__item-container" 
+            class="hamburger-icon"
+            role="button"
+            aria-expanded="false"
+            aria-controls="nav__item-container"
+            aria-label="Open main menu">
+                <span class="sr-only">Open main menu</span>
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+            <ul 
+            id="nav__item-container"
+            class="nav__item-container"
+            aria-expanded="false"
+            aria-label="Main menu"
+            >
+                <li><a href="#nav__item--container"
+                    class="nav__close-icon" 
+                    id="menu-close"
+                    role="button"
+                    aria-expanded="false"
+                    aria-label="Close main menu"
+                    >
+                        &#x2573;
+                    </a>
+                </li>
+                <li class="nav__item-container--item"><a href="../index.html" class="nav__item-container--item--link">Logo</a></li>
+                <li class="nav__item-container--item reflection">
+                    <a href="#reflection" aria-expanded="false" aria-controls="reflection">Reflection</a>
+                    <ul id="reflection" class="nav__item-container__dropdown nav__item-container__dropdown--reflection" aria-expanded="false" aria-label="Level 2 menu">
+                        <li class="nav__item-container__dropdown--item"><a href="c1-reflection-blog.html" class="nav__item-container--item--link">C1 Reflection</a></li>
+                    </ul>
+                </li>
+                <li class="nav__item-container--item technical is_selected">
+                    <a href="#technical" aria-expanded="false" aria-controls="technical">Technical</a>
+                    <ul id="technical" class="nav__item-container__dropdown nav__item-container__dropdown--technical" aria-expanded="false" aria-label="Level 2 menu">
+                        <li class="nav__item-container__dropdown--item"><a href="c1-time-and-habits-blog.html" class="nav__item-container--item--link">Time & Habits</a></li>  
+                        <li class="nav__item-container__dropdown--item"><a href="t2-html-css-dom-p1.html" class="nav__item-container--item--link">Udacity Reflection - Part 1</a></li>
+                        <li class="nav__item-container__dropdown--item"><a href="t2-html-css-dom-p2.html" class="nav__item-container--item--link">Udacity Reflection - Part 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div class="container__intro">
+            <h1>Technical</h1>
+            <p>t2 Udacity relection post - part 2</p>
+        </div>
+
+        <article class="blog">
+            <header class="blog__header">
+                <h2>What is grid based design?</h2>
+            </header>
+            <div class="blog__text">
+                <p>
+                    Grid based design is using vertical and horizontal guidelines to place elements in a design and help with aligning elements.
+                </p>
+            </div>
+        </article>
+
+        <article class="blog">
+            <header class="blog__header">
+                <h2>Whats all the hype about responsive webpages?</h2>
+            </header>
+            <div class="blog__text">
+                <p>
+                    Responsive webpages have acquired much attention over the past few years, as it provides a way for web designers and developers to design and build 
+                    websites that are mobile-friendly, improve the way it looks on devices with both large and small screens, and can also help improve your sites search engine ranking.
+                </p>
+                <p>
+                    
+                </p>
+            </div>
+        </article>
+
+        <article class="blog">
+                <header class="blog__header">
+                    <h2>What is semantic structure?</h2>
+                </header>
+                <div class="blog__text">
+                    <p>
+                        Semantic structure is the use of HTML markup to help outline the webpage and best describe the type or meaning of information on the webpage.
+                    </p>
+                    <p>
+                        Semantic markup is processed by the browser and is also used by spiders to crawl for information.
+                    </p>
+                </div>
+            </article>
+    </section>
+    <footer class="blog__footer">
+        <div class="blog__footer--container">
+            <p>&copy; All rights reserved - Bloggers Delight 2018</p>
+        </div>
+    </footer>
+</body>
+</html>
