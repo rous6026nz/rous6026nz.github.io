@@ -96,23 +96,21 @@ p {
     z-index: 0;
     display: inline-block;
     color: #ffffff;
-    border-radius: .5rem;
     padding: 0 .8rem;
-    margin: .5rem 1rem;
+    margin: .8rem 1rem 0;
     text-align: center;
     text-transform: capitalize;
     text-decoration: none;
     cursor: pointer;
-    /* border: 1px solid #fff; */
 }
 .hamburger-icon div {
-    width: 1.5rem;
+    width: 1.2rem;
     height: 1px;
     background: #ffffff;
     margin: .3rem 0;
 }
 .hamburger-icon div:nth-of-type(2) {
-    width: 1rem;
+    width: .6rem;
 }
 /* Screen reader only */
 .sr-only {
@@ -275,7 +273,7 @@ p {
     }
     .nav__item-container--item:hover .nav__item-container__dropdown {
         display: block;
-        max-height: 10rem;
+        max-height: 50rem;
     }
 }
 /* END: Navigation */
