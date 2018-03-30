@@ -94,6 +94,7 @@ body {
 }
 
 
+
 /* CLOSE BUTTON */
 .close-btn {
     display: block;
@@ -110,6 +111,7 @@ body {
     -ms-transition: color .2s ease;
     transition: color .2s ease;
 }
+
 .close-btn:hover {
     color: yellow;
 }
@@ -160,12 +162,12 @@ body {
 }
 
 
-
 /* When #nav-container is the target */
 #nav-container:target,
 .nav-container[aria-expanded="true"] {
     left: 0;
 }
+
 
 /* When nav open is triggered, open nav overlay */
 /* #nav-overlay:target,
@@ -198,6 +200,55 @@ body {
 }
 
 
+
+/* 
+//
+//
+// Tablet and small desktop media query. 
+//
+//
+*/
+
+@media screen and (min-width: 768px) {
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .close-btn {
+        font-size: 0;
+    }
+
+    .nav-container {
+        left: 0;
+        height: auto;
+        width: 100vw;
+        box-shadow: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-item {
+        height: 5rem;
+    }
+
+    .main-nav-top-section {
+        display: block;
+        height: 5rem;
+        width: 150px;
+        margin: 0;
+        padding: 0;
+    }
+
+    ..main-nav-top-section:hover {
+        cursor: pointer;
+    }
+
+
+    .nav-item:hover {
+        background: rgba(255,255,255,.02);
+    }
+}
 
 
 
