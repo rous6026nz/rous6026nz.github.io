@@ -3,29 +3,109 @@
   <head>
     <title>Bloggers Delight | A Dev Academy Journey</title>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,900i" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
     <nav class="navbar">
-        <ul>
-            <li class="nav-item"><a href="">Home</a></li>
+            <span class="nav-overlay" id="nav-overlay" aria-expanded="false"></span>
+        <a href="#nav-container" 
+        class="hamburger-icon"
+        role="button"
+        aria-expanded="false"
+        aria-controls="nav-container"
+        aria-label="Open Menu">
+            <span class="sr-only">Open Menu</span>
+            <div></div>
+            <div></div>
+            <div></div>
+        </a>
+        <ul id="nav-container" class="nav-container" aria-expanded="false" aria-label="Main Menu">
+            <li class="nav-item main-nav-top-section">
+                <a href="">My Logo</a>
+                <a href="#nav-overlay" class="close-btn" role="button" aria-expanded="false" aria-label="Close Menu">&#x2573;</a>
+            </li>
             <li class="nav-item"><a href="">Culture</a></li>
             <li class="nav-item"><a href="">Tecnical</a></li>
         </ul>
     </nav>
+
     <section class="welcome-message">
         <h1>Welcome message load and clear</h1>
+        <p>A Dev Academy journey</p>
     </section>
+
     <section class="intro-text">
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam molestiae laboriosam vero natus numquam ipsam, aliquid ad tempore est rerum maxime velit ducimus quisquam itaque eos ex quidem obcaecati corporis.</p>
     </section>
-    <div class="welcome-bot-img-container">
-        <img src="http://placehold.it/300x200" srcset="http://placehold.it/300x200 300w" sizes="100vw" alt="Placeholder"/>            
-    </div>
-    <footer>
 
+    <section class="welcome-img-container">
+        <img src="http://placehold.it/300x200" srcset="http://placehold.it/300x200 300w" sizes="100vw" alt="Placeholder"/>            
+    </section>
+
+    <h1 class="section-heading">Most Recent Posts</h1>
+
+    <section class="recent-blog-container">
+        
+        <section class="carousel-container">
+            <a href="#">
+                <article class="blog-card">
+                    <header>
+                        <h1>Blog Title 1</h1>
+                    </header>
+                    <div class="blog-pull">This is a pull from the blog...</div>
+                </article>
+            </a>
+            
+            <a href="#">
+                <article class="blog-card">
+                    <header>
+                        <h1>Blog Title 2</h1>
+                    </header>
+                    <div class="blog-pull">This is a pull from the blog...</div>
+                </article>
+            </a>
+
+            <a href="#">
+                <article class="blog-card">
+                    <header>
+                        <h1>Blog Title 3</h1>
+                    </header>
+                    <div class="blog-pull">This is a pull from the blog...</div>
+                </article>
+            </a>
+
+            <a href="#">
+                <article class="blog-card">
+                    <header>
+                        <h1>Blog Title 4</h1>
+                    </header>
+                    <div class="blog-pull">This is a pull from the blog...</div>
+                </article>
+            </a>
+        </section><!-- END: .carousel-container -->
+        
+    </section><!-- END: .recent-blog-container -->
+
+    <footer class="footer-container">
+        <nav class="footer-nav">
+            <span>Quick Links</span>
+            <ul>
+                <li class="nav-item"><a href="#">Reflection</a></li>
+                <li class="nav-item"><a href="#">Technical</a></li>
+            </ul>
+        </nav>
+        <ul class="info">
+            <li>Info</li>
+            <li class="info-link"><a href="#">About the blogger</a></li>
+            <li class="info-link"><a href="#">Contact</a></li>
+            <li class="info-link"><a href="#">What I do</a></li>
+            <li class="info-link"><a href="#">Getting involved</a></li>
+        </ul>
+        <hr>
+        <p>&copy; All right reserved 2018</p>
     </footer>
   </body>
 </html>
