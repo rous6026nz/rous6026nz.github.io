@@ -638,7 +638,7 @@ footer p{
     width: 75%;
     background: #fafafa;
     padding: 1rem;
-    margin-right: 1rem;
+    margin: 2rem 1rem 0 0;
 }
 
 
@@ -651,4 +651,45 @@ footer p{
 /* BLOG INFORMATION LIST ITEM */
 .blog-info-item {
     margin: 0;
+}
+
+
+
+
+
+/* 
+//
+//
+// Blog content styling.
+//
+//
+*/
+
+/* BLOG CONTENT CONTAINER */
+.blog-content-container {
+    width: 100%;
+    padding: 1rem;
+    margin: 2rem auto;
+    clear: both;
+}
+
+/* BLOG ARTICLE */
+.blog-article {
+    padding: 2rem;
+    margin: 1rem auto;
+    background: #f7f7f7;
+}
+
+/* BLOG HEADER */
+.blog-header {
+    margin: 0;
+}
+
+.blog-header h1 {
+    font-size: 3rem;
+}
+
+/* BLOG TEXT */
+.blog-text {
+    margin-bottom: 1rem;
 }
