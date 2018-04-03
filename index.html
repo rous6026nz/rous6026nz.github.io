@@ -10,14 +10,10 @@
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
+    <!-- NAVBAR -->
     <nav class="navbar">
-            <span class="nav-overlay" id="nav-overlay" aria-expanded="false"></span>
-        <a href="#nav-container" 
-        class="hamburger-icon"
-        role="button"
-        aria-expanded="false"
-        aria-controls="nav-container"
-        aria-label="Open Menu">
+        <span class="nav-overlay" id="nav-overlay" aria-expanded="false"></span>
+        <a href="#nav-container" class="hamburger-icon" role="button" aria-expanded="false" aria-controls="nav-container" aria-label="Open Menu">
             <span class="sr-only">Open Menu</span>
             <div></div>
             <div></div>
@@ -29,85 +25,86 @@
                 <a href="#nav-overlay" class="close-btn" role="button" aria-expanded="false" aria-label="Close Menu">&#x2573;</a>
             </li>
             <li class="nav-item"><a href="">Culture</a></li>
-            <li class="nav-item"><a href="">Tecnical</a></li>
+            <li class="nav-item"><a href="">Technical</a></li>
         </ul>
     </nav>
 
+    <!-- WELCOME IMAGE -->
+    <section class="welcome-img-container">
+        <img src="https://devacademy.co.nz/wp-content/uploads/2017/06/Dev-Academy-bikes.jpg" srcset="https://devacademy.co.nz/wp-content/uploads/2017/06/Dev-Academy-bikes.jpg 300w" sizes="100vw" alt="Placeholder"/>            
+    </section>
+
+    <!-- WELCOME MESSAGE -->
     <section class="welcome-message">
         <h1>Welcome message load and clear</h1>
         <p>A Dev Academy journey</p>
     </section>
 
-    <section class="intro-text">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam molestiae laboriosam vero natus numquam ipsam, aliquid ad tempore est rerum maxime velit ducimus quisquam itaque eos ex quidem obcaecati corporis.</p>
-    </section>
+    <!-- MAIN CONTENT CONTAINER -->
+    <section class="content-container">
 
-    <section class="welcome-img-container">
-        <img src="http://placehold.it/300x200" srcset="http://placehold.it/300x200 300w" sizes="100vw" alt="Placeholder"/>            
-    </section>
+        <!-- INTRODUCTION TEXT -->
+        <section class="intro-text">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore aliquid eveniet, facere possimus adipisci in cum sed molestiae laboriosam odit incidunt ipsum, aut officia autem velit. Quo praesentium nostrum soluta!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam molestiae laboriosam vero natus numquam ipsam, aliquid ad tempore est rerum maxime velit ducimus quisquam itaque eos ex quidem obcaecati corporis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui necessitatibus iste sequi deserunt laudantium, vero veritatis quidem eos. Distinctio voluptates quae explicabo quia suscipit sint commodi vero veritatis nisi harum.</p>
+        </section>
+    
+        <!-- RECENT BLOG SECTION -->
+        <section class="blog-container">
+            <h1 class="section-heading">Most Recent Posts</h1>
+    
+            <section class="recent-blog-container">
 
-    <h1 class="section-heading">Most Recent Posts</h1>
-
-    <section class="recent-blog-container">
+                <!-- RECENT BLOG MOBILE CAROUSEL CONTAINER -->
+                <section class="carousel-container">
+                    <a href="#">
+                        <article class="blog-card">
+                            <header>
+                                <h1>Blog Title 1</h1>
+                            </header>
+                            <div class="blog-pull">This is a pull from the blog...</div>
+                        </article>
+                    </a>
+                    
+                    <a href="#">
+                        <article class="blog-card">
+                            <header>
+                                <h1>Blog Title 2</h1>
+                            </header>
+                            <div class="blog-pull">This is a pull from the blog...</div>
+                        </article>
+                    </a>
         
-        <section class="carousel-container">
-            <a href="#">
-                <article class="blog-card">
-                    <header>
-                        <h1>Blog Title 1</h1>
-                    </header>
-                    <div class="blog-pull">This is a pull from the blog...</div>
-                </article>
-            </a>
-            
-            <a href="#">
-                <article class="blog-card">
-                    <header>
-                        <h1>Blog Title 2</h1>
-                    </header>
-                    <div class="blog-pull">This is a pull from the blog...</div>
-                </article>
-            </a>
-
-            <a href="#">
-                <article class="blog-card">
-                    <header>
-                        <h1>Blog Title 3</h1>
-                    </header>
-                    <div class="blog-pull">This is a pull from the blog...</div>
-                </article>
-            </a>
-
-            <a href="#">
-                <article class="blog-card">
-                    <header>
-                        <h1>Blog Title 4</h1>
-                    </header>
-                    <div class="blog-pull">This is a pull from the blog...</div>
-                </article>
-            </a>
-        </section><!-- END: .carousel-container -->
+                    <a href="#">
+                        <article class="blog-card">
+                            <header>
+                                <h1>Blog Title 3</h1>
+                            </header>
+                            <div class="blog-pull">This is a pull from the blog...</div>
+                        </article>
+                    </a>
         
-    </section><!-- END: .recent-blog-container -->
+                    <a href="#">
+                        <article class="blog-card">
+                            <header>
+                                <h1>Blog Title 4</h1>
+                            </header>
+                            <div class="blog-pull">This is a pull from the blog...</div>
+                        </article>
+                    </a>
+                </section><!-- END: .carousel-container -->
+                
+            </section><!-- END: .recent-blog-container -->
+        </section><!-- END: .blog-container -->
 
-    <footer class="footer-container">
-        <nav class="footer-nav">
-            <span>Quick Links</span>
-            <ul>
-                <li class="nav-item"><a href="#">Reflection</a></li>
-                <li class="nav-item"><a href="#">Technical</a></li>
-            </ul>
-        </nav>
-
-        <span>Info</span>
-        <ul class="info-list">
-            <li class="info-link"><a href="#">About the blogger</a></li>
-            <li class="info-link"><a href="#">Contact</a></li>
-            <li class="info-link"><a href="#">What I do</a></li>
-            <li class="info-link"><a href="#">Getting involved</a></li>
-        </ul>
-        <hr>
-        <p>&copy; All right reserved 2018</p>
+    </section><!-- END: .content-container -->
+    
+    <!-- FOOTER SECTION -->
+    <footer>
+        <section class="footer-container">
+            <p>&copy; All right reserved 2018</p>
+        </section>
     </footer>
   </body>
 </html>
