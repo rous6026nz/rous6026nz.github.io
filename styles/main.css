@@ -318,6 +318,17 @@ body {
 
 
 
+.end-section:after {
+    content: "";
+    width: 25%;
+    display: block;
+    border-top: 2px solid rgba(255,0,0,.8);
+}
+
+
+
+
+
 /*  INTRODUCTION IMAGE  */
 .welcome-img-container {
     display: none;
