@@ -834,6 +834,7 @@ footer p{
 /* BLOG INFORMATION LIST ITEM */
 .blog-info-item {
     margin: 0;
+    font-size: 2rem;
 }
 
 
