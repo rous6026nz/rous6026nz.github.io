@@ -68,6 +68,9 @@ body {
 }
 
 
+
+
+
 /* HAMBURGER */
 .hamburger-icon {
     font-family: Arial, Helvetica, sans-serif;
@@ -85,15 +88,17 @@ body {
 }
 
 .hamburger-icon div {
-    width: 1.2rem;
+    width: 1.8rem;
     height: 1px;
     background: #ffffff;
-    margin: .3rem 0;
+    margin: .5rem 0;
 }
 
 .hamburger-icon div:nth-of-type(2) {
-    width: .6rem;
+    width: 1rem;
 }
+
+
 
 
 
@@ -119,6 +124,9 @@ body {
 }
 
 
+
+
+
 /* SCREEN READER ONLY */
 .sr-only {
     position: absolute;
@@ -130,6 +138,9 @@ body {
     clip: rect(0,0,0,0);
     border: 0;
 }
+
+
+
 
 
 /* Mobile nav overlay */
@@ -146,6 +157,9 @@ body {
     -o-transition: display .3s ease-in-out;
     transition: display .3s ease-in-out;
 } */
+
+
+
 
 
 /* NAVIGATION CONTAINER */
@@ -166,11 +180,17 @@ body {
 }
 
 
+
+
+
 /* When #nav-container is the target */
 #nav-container:target,
 .nav-container[aria-expanded="true"] {
     left: 0;
 }
+
+
+
 
 
 /* When nav open is triggered, open nav overlay */
@@ -179,15 +199,24 @@ body {
    display: block;
 } */
 
+
+
+
+
 /* NAVIGATION LIST ITEM */
 .nav-item {
     width: 100%;
     display: inline-block;
-    text-align: center;
+    text-align: left;
     padding: 0;
     margin: 0;
+    text-indent: 2rem;
     border-bottom: 1px solid rgba(255,255,255, .3);
 }
+
+
+
+
 
 /* NAVIGATION LINK */
 .nav-item a {
@@ -196,15 +225,37 @@ body {
     line-height: 5rem;
     height: 5rem;
     text-decoration: none;
+    color: #fff;
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
 }
+
+
+
+
+
+/* NAVIGATION LINK HOVER */
+.nav-item a:hover {
+    color: yellow;
+}
+
+
+
+
 
 /* MOBILE NAVIGATION TOP SECTION */
 .main-nav-top-section {
     height: 8rem;
     padding: 1.5rem;
+    padding-left: 0;
     display: flex;
     justify-content: space-between; 
 }
+
+
 
 
 
@@ -246,6 +297,13 @@ body {
     .nav-item {
         height: 5rem;
         border: none;
+        text-align: center;
+        background: none;
+        -webkit-transition: background .2s ease-in-out;
+        -moz-transition: background .2s ease-in-out;
+        -o-transition: background .2s ease-in-out;
+        -ms-transition: background .2s ease-in-out;
+        transition: background .2s ease-in-out;
     }
 
 
@@ -258,6 +316,12 @@ body {
         padding: 0;
     }
 
+    /* NAVIGATION LOGO */
+    .main-nav-top-section img {
+        position: absolute;
+        left: 0;
+    }
+
 
     /* NAVIGATION HOVER STYLES */
     .main-nav-top-section:hover {
@@ -265,7 +329,7 @@ body {
     }
 
     .nav-item:hover {
-        background: rgba(255,255,255,.02);
+        background: rgba(255,255,255,.1);
     }
 }
 
