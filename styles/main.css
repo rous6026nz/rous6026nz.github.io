@@ -677,6 +677,7 @@ footer p{
 */
 
 .template-container {
+    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -698,6 +699,7 @@ footer p{
     .template-container {
         flex-direction: row;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 }
 
@@ -853,7 +855,7 @@ footer p{
     /* BLOG INFORMATION CONTAINER */
     .blog-info-container {
         background: rgba(105, 105, 240, 0.8);
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 50%;
         width: 15rem;
@@ -945,7 +947,6 @@ footer p{
         justify-content: space-between;
         width: 70%;
         margin-top: 25rem;
-        column-count: 2;
     }
 
 
