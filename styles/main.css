@@ -992,8 +992,8 @@ footer p{
 
 /* BLOG CONTENT IMAGE */
 .blog-img-container > img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    object-fit: scale-down;
 }
 
 
@@ -1015,9 +1015,6 @@ footer p{
     .blog-content-container {
         position: relative;
         z-index: 100;
-        /* display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start; */
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2;
@@ -1038,10 +1035,7 @@ footer p{
         margin: 1rem 0;
         background: none;
     }
-    .blog-article:after {
-        content: "";
-        display: block;
-    }
+
 
 
 
