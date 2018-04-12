@@ -1,141 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bloggers Delight | Time & Habits</title>
-    <link rel="stylesheet" href="../styles/main.css">
-</head>
-<body>
-    <header>
-        <nav id="nav" class="nav">
-            <a href="#nav__item-container" 
-            class="hamburger-icon"
-            role="button"
-            aria-expanded="false"
-            aria-controls="nav__item-container"
-            aria-label="Open main menu">
-                <span class="sr-only">Open main menu</span>
-                <div></div>
-                <div></div>
-                <div></div>
-            </a>
-            <ul 
-            id="nav__item-container"
-            class="nav__item-container"
-            aria-expanded="false"
-            aria-label="Main menu"
-            >
-                <li><a href="#nav__item--container"
-                    class="nav__close-icon" 
-                    id="menu-close"
-                    role="button"
-                    aria-expanded="false"
-                    aria-label="Close main menu"
-                    >
-                        &#x2573;
-                    </a>
-                </li>
-                <li class="nav__item-container--item"><a href="../index.html" class="nav__item-container--item--link">Logo</a></li>
-                
-                <li class="nav__item-container--item culture  is_selected">
-                    <a href="culture" class="nav__item-container--item--link" aria-expaded="false" aria-controls="culture">Culture</a>
-                    <ul class="nav__item-container__dropdown nav__item-container__dropdown--culture" aria-expanded="false" aria-label="Level 2 menu">
-                        <li class="nav__item-container__dropdown--item"><a href="c1-reflection-blog.html" class="nav__item-container--item--link">Reflection</a></li>
-                        <li class="nav__item-container__dropdown--item"><a href="c1-time-and-habits-blog.html" class="nav__item-container--item--link">Time & Habits</a></li>  
-                        <li class="nav__item-container__dropdown--item"><a href="c2-emotional-intelligence.html" class="nav__item-container--item--link">Emotional Intelligence</a></li>
-                    </ul>
-                </li>
+<html>
+  <head>
+      <title>Bloggers Delight | A Dev Academy Journey</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,900i" rel="stylesheet"> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+      <link rel="stylesheet" href="../styles/main.css">
+  </head>
+  <body>
 
-                <li class="nav__item-container--item technical">
-                    <a href="#technical" aria-expanded="false" aria-controls="technical">Technical</a>
-                    <ul id="technical" class="nav__item-container__dropdown nav__item-container__dropdown--technical" aria-expanded="false" aria-label="Level 2 menu">
-                        <li class="nav__item-container__dropdown--item"><a href="t2-html-css-dom-p1.html" class="nav__item-container--item--link">Udacity Reflection - Part 1</a></li>
-                        <li class="nav__item-container__dropdown--item"><a href="t2-html-css-dom-p2.html" class="nav__item-container--item--link">Udacity Reflection - Part 2</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <span class="nav-overlay" id="nav-overlay" aria-expanded="false"></span>
+        <a href="#nav-container" class="hamburger-icon" role="button" aria-expanded="false" aria-controls="nav-container" aria-label="Open Menu">
+            <span class="sr-only">Open Menu</span>
+            <div></div>
+            <div></div>
+            <div></div>
+        </a>
+        <ul id="nav-container" class="nav-container" aria-expanded="false" aria-label="Main Menu">
+            <li class="nav-item main-nav-top-section">
+                <a href="../index.html"><img src="http://via.placeholder.com/70x50" alt=""></a>
+                <a href="#nav-overlay" class="close-btn" role="button" aria-expanded="false" aria-label="Close Menu">&#x2573;</a>
+            </li>
+            <li class="nav-item is_selected">Cultural
+                <ul class="dropdown" id="cultural">
+                    <li class="nav-item"><a href="c1-reflection-blog.html">Reflection</a></li>
+                    <li class="nav-item"><a href="c1-time-and-habits-blog.html">Time And Habits</a></li>
+                    <li class="nav-item"><a href="c2-emotional-intelligence.html">Emotional Intelligence</a></li>
+                    <li class="nav-item"><a href="c3-meditation-process.html">Meditation Process</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">Technical
+                <ul class="dropdown" id="technical">
+                    <li class="nav-item"><a href="t2-html-css-dom-p1.html">HTML, CSS And DOM - Part 1</a></li>
+                    <li class="nav-item"><a href="t2-html-css-dom-p2.html">HTML, CSS And DOM - Part 2</a></li>
+                    <li class="nav-item"><a href="t3-design-to-web-blog.html">Design To Web</a></li>
+                    <li class="nav-item"><a href="t4-javascript-basics.html">JavaScript Basics</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
-    <section class="container">
-        <div class="container__intro">
-            <h1>Time &amp; Habit</h1>
-            <p>c1 time and habit post</p>
-        </div>
-        
-        <article class="blog">
-            <header class="blog__header">
-                <h2>Which timebox and habits techniques did I try?</h2>
-            </header>
-            <div class="blog__text">
-                <p>
-                    In the past, I have used a similar strategy similar to the Pomodoro technique, where I would identify my todo tasks, allocate time to each task, 
-                    then begin work on each task stopping every 30 minutes for a 5 minute break to get a drink of water, go toilet or walk around the building.
-                </p>
-                <p>
-                    The Pomodoro technique seems more structured, with accurate time keeping. It also helps with accurately defining timelines for each task, and 
-                    breaking each task into sizable chunks of work.
-                </p>
+    <!-- BLOG TEMPLATE CONTAINER -->
+    <section class="template-container">
+
+      <!-- BLOG HEADER SECTION -->
+      <section class="blog-header">
+        <img src="https://devacademy.co.nz/wp-content/uploads/2017/06/Dev-Academy-bikes.jpg" srcset="https://devacademy.co.nz/wp-content/uploads/2017/06/Dev-Academy-bikes.jpg 300w" sizes="100vw" alt="">
+        <h1 class="blog-title">Time & Habit</h1>
+      </section>
+
+      <!-- BLOG INFORMATION CONTAINER -->
+      <section class="blog-info-container end-section">
+        <ul>
+          <li class="blog-info-item">Cultural Blog</li>
+          <li class="blog-info-item">Sprint 1.2</li>
+        </ul>
+      </section>
+
+      <!-- BLOG CONTENT CONTAINER -->
+      <section class="blog-content-container">
+        <article class="blog-article end-section">
+          <header class="blog-post-header"><h1>Which timebox and habits techniques did I try?</h1></header>
+          <div class="blog-text">
+                <p>In the past, I have used a similar strategy similar to the Pomodoro technique, where I would identify my todo tasks, allocate time to each task, then begin work on each task stopping every 30 minutes for a 5 minute break to get a drink of water, go toilet or walk around the building.</p>
+                <p>The Pomodoro technique seems more structured, with accurate time keeping. It also helps with accurately defining timelines for each task, and breaking each task into sizable chunks of work.</p>
             </div>
         </article>
-        <article class="blog">
-            <header class="blog__header">
-                <h2>What did I find interesting?</h2>
-            </header>
-            <div class="blog__text">
-                <p>
-                    <b><i>"Confidence is just displayed ability"</i></b><br>
-                    I found this very interesting because like the author of this blog highlighted we are always told "believe in yourself first, then you’ll achieve it", 
-                    when in actual fact it made more sense to reverse this theory - which aligns more with his coaches theory.
-                </p>
-                <p>
-                    I also found the article about "How mindfullness can improve productivity, focus and work life balance" interesting, talking about listening to the 
-                    lizard brain and how although our brains have evovled, our lizard brains have not - still thinking of survival mode. 
-                </p>
-                <p>
-                    This shed light on some common behavior patterns observed in the workplace, on the sports field and in society, and sparked further thinking. 
-                    Is the lizard brain more prominent in intraverted personalities? Does this mean that people who are more out spoken and confident have a more evolved 
-                    lizard brains? Is having a more evolved lizard brain a good or bad thing?
-                </p>
-            </div>
+        <article class="blog-article end-section">
+          <header class="blog-post-header"><h1>What did I find interesting?</h1></header>
+          <div class="blog-text">
+              <p><i>"Confidence is just displayed ability"</i></p>
+              <p>I found this very interesting because like the author of this blog highlighted we are always told "believe in yourself first, then you’ll achieve it", when in actual fact it made more sense to reverse this theory - which aligns more with his coaches theory.</p>
+              <p>I also found the article about "How mindfullness can improve productivity, focus and work life balance" interesting, talking about listening to the lizard brain and how although our brains have evovled, our lizard brains have not - still thinking of survival mode.</p>
+              <p>This shed light on some common behavior patterns observed in the workplace, on the sports field and in society, and sparked further thinking. Is the lizard brain more prominent in intraverted personalities? Does this mean that people who are more out spoken and confident have a more evolved lizard brains? Is having a more evolved lizard brain a good or bad thing?</p>
+          </div>
         </article>
-        <article class="blog">
-            <header class="blog__header">
-                <h2>What worked for me?</h2>
-            </header>
-            <div class="blog__text">
-                <p>
-                    The Pomodoro technique is something which I feel will work will for me when tackling projects. I will also like to try meditation, I have never try meditation, 
-                    but can image how it could help with clarative thinking and relieving stress levels.
-                </p>
-                <p>
-                    In the past, when I came up against a blocker when programming, I would leave the computer and do something totally different - like go to the beach, and 9 times 
-                    out of 10, I would find a solution either while I'm doing something else or when re-visiting the issue. It felt like although I wasn't thinking about the issue, 
-                    my brain was subconsciously trying to solve the problem.
-                </p>
-            </div>
+        <article class="blog-article end-section">
+          <header class="blog-post-header"><h1>What worked for me?</h1></header>
+          <div class="blog-text">
+              <p>The Pomodoro technique is something which I feel will work will for me when tackling projects. I will also like to try meditation, I have never try meditation, but can image how it could help with clarative thinking and relieving stress levels.</p>
+              <p>In the past, when I came up against a blocker when programming, I would leave the computer and do something totally different - like go to the beach, and 9 times out of 10, I would find a solution either while I'm doing something else or when re-visiting the issue. It felt like although I wasn't thinking about the issue, my brain was subconsciously trying to solve the problem.</p>
+          </div>
         </article>
-        <article class="blog">
-            <header class="blog__header">
-                <h2>Which will I experiment further with?</h2>
-            </header>
-            <div class="blog__text">
-                <p>
-                    I want to experiment with meditation, both focal and mindful. I was unknowingly performing meditation in the past while admiring the view from my desktop at work 
-                    as well as while working through the bush walk next to my office.
-                </p>
-                <p>
-                    I also want to experiement with the Pomodoro timeboxing technique as well.
-                </p>
-            </div>
+        <article class="blog-article end-section">
+          <header class="blog-post-header"><h1>Which will I experiment further with?</h1></header>
+          <div class="blog-text">
+              <p>I want to experiment with meditation, both focal and mindful. I was unknowingly performing meditation in the past while admiring the view from my desktop at work as well as while working through the bush walk next to my office.</p>
+              <p>I also want to experiement with the Pomodoro timeboxing technique as well.</p>
+          </div>
         </article>
+      </section>
+
     </section>
-    <footer class="blog__footer">
-        <div class="blog__footer--container">
-            <p>&copy; All rights reserved - Bloggers Delight 2018</p>
-        </div>
+    <!-- END: TEMPLATE CONTAINER -->
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <section class="footer-container">
+            <p>&copy; All right reserved 2018</p>
+        </section>
     </footer>
-</body>
+  </body>
 </html>
