@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Bloggers Delight | JavaScript Basics</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,900i" rel="stylesheet"> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+      <link rel="stylesheet" href="../styles/main.css">
+  </head>
+  <body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <span class="nav-overlay" id="nav-overlay" aria-expanded="false"></span>
+        <a href="#nav-container" class="hamburger-icon" role="button" aria-expanded="false" aria-controls="nav-container" aria-label="Open Menu">
+            <span class="sr-only">Open Menu</span>
+            <div></div>
+            <div></div>
+            <div></div>
+        </a>
+        <ul id="nav-container" class="nav-container" aria-expanded="false" aria-label="Main Menu">
+            <li class="nav-item main-nav-top-section">
+                <a href="../index.html"><img src="http://via.placeholder.com/70x50" alt=""></a>
+                <a href="#nav-overlay" class="close-btn" role="button" aria-expanded="false" aria-label="Close Menu">&#x2573;</a>
+            </li>
+            <li class="nav-item">Cultural
+                <ul class="dropdown" id="cultural">
+                    <li class="nav-item"><a href="c1-reflection-blog.html">Reflection</a></li>
+                    <li class="nav-item"><a href="c1-time-and-habits-blog.html">Time And Habits</a></li>
+                    <li class="nav-item"><a href="c2-emotional-intelligence.html">Emotional Intelligence</a></li>
+                    <li class="nav-item"><a href="c3-meditation-process.html">Meditation Process</a></li>
+                </ul>
+            </li>
+            <li class="nav-item is_selected">Technical
+                <ul class="dropdown" id="technical">
+                    <li class="nav-item"><a href="t2-html-css-dom-p1.html">HTML, CSS And DOM - Part 1</a></li>
+                    <li class="nav-item"><a href="t2-html-css-dom-p2.html">HTML, CSS And DOM - Part 2</a></li>
+                    <li class="nav-item"><a href="t3-design-to-web-blog.html">Design To Web</a></li>
+                    <li class="nav-item"><a href="t4-javascript-basics.html">JavaScript Basics</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- BLOG TEMPLATE CONTAINER -->
+    <section class="template-container">
+
+      <!-- BLOG HEADER SECTION -->
+      <section class="blog-header">
+        <img src="https://devacademy.co.nz/wp-content/uploads/2017/06/Dev-Academy-bikes.jpg" srcset="https://devacademy.co.nz/wp-content/uploads/2017/06/Dev-Academy-bikes.jpg 300w" sizes="100vw" alt="">
+        <h1 class="blog-title">JavaScript Basics</h1>
+      </section>
+
+      <!-- BLOG INFORMATION CONTAINER -->
+      <section class="blog-info-container end-section">
+        <ul>
+          <li class="blog-info-item">Technical Blog</li>
+          <li class="blog-info-item">Sprint 4.1</li>
+        </ul>
+      </section>
+
+      <!-- BLOG CONTENT CONTAINER -->
+      <section class="blog-content-container">
+        <article class="blog-article end-section">
+          <header class="blog-post-header"><h1>How does JavaScript compare to HTML and CSS?</h1></header>
+          <div class="blog-text">
+              <p>JavaScript provides the interactive layer of a website, and is generally used to provide feedback to user interactions and serve up dynamic content. HTML is used to mark-up the structure of a webpage, CSS is the visual layer of a webpage used to style elements and both are static programing languages.</p>
+              <p>The disadvantage of JavaScript is that it is an imperative language and is fragile, were as HTML and CSS are declarative languages and are resilient. The disadvantage of being a imperative language, is if there a mistake or something unknown in your JavaScript code, even as small as missing a semicolon the application will break.</p>
+              <p>Where as with declarative languages like HTML and CSS, if the browser comes across some code that it doesn't understand i.e a mistake or code it doesn't support, it will be skipped and the parser will move on.</p>
+          </div>
+        </article>
+        <article class="blog-article end-section">
+          <header class="blog-post-header"><h1>Explain control flow and loops using an example process from everyday life?</h1></header>
+          <div class="blog-text">
+              <p>A simple everyday process which I could use to explain control flow and loops would be the process of making breakfast in the morning. In my household we have 5 people who I will need to cook breakfast for, each person requires 2 pieces of toast.</p>
+              <p>So my control is I need to cook 10 pieces of toast, and my loop is toasting 2 pieces of toast for every iteration. Once I have toasted 10 pieces of bread, my loop ends because I have reached my control.</p>
+          </div>
+        </article>
+        <article class="blog-article end-section">
+          <header class="blog-post-header"><h1>Explain the difference between accessing data from arrays and objects?</h1></header>
+          <div class="blog-text">
+              <p>When accessing data in an array, you access the data using bracket notation and reference the position of the data you want to retrieve using indexing.</p>
+              <p>When accessing data in an object, you access the data using either bracket notation or dot notation and reference the data you want to retrieve using keys.</p>
+          </div>
+        </article>
+        <article class="blog-article end-section">
+          <header class="blog-post-header"><h1>Explain what functions are and why they are useful?</h1></header>
+          <div class="blog-text">
+              <p>Functions are blocks of code that perform a specific task. Common uses of functions are to automate time intensive or repeataive tasks through to small tasks like formatting text or processing an array.</p>
+              <p>The use functions help speed up development and programming DRY (Don't Repeat Yourself) which means we can create the function once and use it in multiple places, and can have arguments and produce differing results when called.</p>
+          </div>
+        </article>
+      </section>
+
+    </section>
+    <!-- END: TEMPLATE CONTAINER -->
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <section class="footer-container">
+            <p>&copy; All right reserved 2018</p>
+        </section>
+    </footer>
+  </body>
+</html>
