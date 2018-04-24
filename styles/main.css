@@ -104,7 +104,7 @@ body {
 
 
 /* CLOSE BUTTON */
-.nav-item .close-btn {
+.close-btn {
     display: block;
     text-align: right;
     font-family: 'Roboto', sans-serif;
