@@ -36,6 +36,17 @@ body {
     font-weight: 300;
 }
 
+/* QUESTION */
+.question {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #333;
+    border-left: 4px solid #ccc;
+    padding-left: 1.5rem;
+}
+
+
 /* SECTION HEADING */
 .section-heading {
     font-size: 2rem;
@@ -254,8 +265,6 @@ body {
     -ms-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
-
-
 
 .dropdown > li.nav-item {
     border-bottom: 1px solid rgba(255,255,255, .3);
@@ -561,6 +570,8 @@ body {
     text-decoration: underline;
     font-style: italic;
 }
+
+
 
 
 
@@ -1095,6 +1106,11 @@ footer p{
         column-gap: 2rem;
         width: 70%;
         margin-top: 25rem;
+        margin-right: 0;
+    }
+
+    .blog-content-container ~ .blog-content-container {
+        margin-top: 5rem;
     }
 
 
