@@ -1,0 +1,153 @@
+html, body {
+  height: 100%;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: flex-center;
+  flex-direction: column;
+}
+
+
+#message, #notes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#message {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+
+.board-container {
+  position: relative;
+  z-index: 1000;
+  overflow: hidden;
+  width: 100vw;
+  background: url("images/game-bg.svg");
+  background-position: 0 0;
+  background-repeat: repeat-x;
+
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+  -webkit-animation: animate 35s linear infinite;
+  -moz-animation: animate 35s linear infinite;
+  -o-animation: animate 35s linear infinite;
+  animation: animate 35s linear infinite;
+  padding: 4rem 0;
+}
+
+
+/* @keyframes animate {
+  from {
+    transform: translateX(0)
+  }
+  to {
+    transform: translateX(100%);
+  }
+} */
+
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba(255,255,255,.5);
+  padding: 2rem;
+  margin: auto;
+}
+
+
+.board div {
+  color: green;
+  font-size: 2rem;
+  width: 75px;
+  height: 75px;
+  border: 1px #ccc dotted;
+  border-radius: 10%;
+  background-color: white;
+  margin: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-transition: background-color .1s ease-in-out;
+  -moz-transition: background-color .1s ease-in-out;
+  transition: background-color .1s ease-in-out;
+}
+
+
+.board div:hover {
+  background-color: white;
+}
+
+
+div.mine, div.mine:hover {
+  background: no-repeat center/60% url("images/bomb.svg") crimson;
+}
+
+
+div.hidden {
+  background: #eee;
+}
+
+
+div.hidden:hover {
+  background: #ccc;
+}
+
+
+div.marked, div.marked:hover {
+  background: no-repeat center/60% url("images/mark.svg") deepskyblue;
+}
+
+
+/* RESET BUTTON */
+.reset-btn {
+  display: none;
+  width: 150px;
+  background: rgb(7, 175, 7);
+  border-radius: 10px;
+  margin-top: 2rem;
+  padding: 10px 0;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  color: #fff;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 0;
+  border-top: 1px solid rgba(68,68,68, .1);
+  background: #fafafa;
+  padding: 2rem;
+}
+
+.back-link {
+  display: block;
+  width: auto;
+  float: left;
+}
+
+.back-link a {
+  color: #333;
+}
+
+.footer-container {
+  display: block;
+  width: 25%;
+  margin: auto;
+  text-align: center;
+}
