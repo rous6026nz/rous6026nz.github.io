@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Bloggers Delight | JS Language</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,900i" rel="stylesheet"> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+      <link rel="stylesheet" href="../styles/main.css">
+  </head>
+  <body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <span class="nav-overlay" id="nav-overlay" aria-expanded="false"></span>
+        <a href="#nav-container" class="hamburger-icon" role="button" aria-expanded="false" aria-controls="nav-container" aria-label="Open Menu">
+            <span class="sr-only">Open Menu</span>
+            <div></div>
+            <div></div>
+            <div></div>
+        </a>
+        <ul id="nav-container" class="nav-container" aria-expanded="false" aria-label="Main Menu">
+            <li class="nav-item main-nav-top-section">
+                <a href="../index.html"><img src="http://via.placeholder.com/81x81" alt=""></a>
+                <a href="#nav-overlay" class="close-btn" role="button" aria-expanded="false" aria-label="Close Menu">&#x2573;</a>
+            </li>
+            <li class="nav-item">Cultural
+                <ul class="dropdown" id="cultural">
+                    <li class="nav-item"><a href="c1-reflection-blog.html">Reflection</a></li>
+                    <li class="nav-item"><a href="c1-time-and-habits-blog.html">Time And Habits</a></li>
+                    <li class="nav-item"><a href="c2-emotional-intelligence.html">Emotional Intelligence</a></li>
+                    <li class="nav-item"><a href="c3-meditation-process.html">Meditation Process</a></li>
+                    <li class="nav-item"><a href="c4-daily-mindfulness.html">Daily Mindfulness</a></li>
+                    <li class="nav-item"><a href="c5-self-confidence.html">Self Confidence</a></li>
+                </ul>
+            </li>
+            <li class="nav-item is_selected">Technical
+                <ul class="dropdown" id="technical">
+                    <li class="nav-item"><a href="t2-html-css-dom-p1.html">HTML, CSS And DOM - Part 1</a></li>
+                    <li class="nav-item"><a href="t2-html-css-dom-p2.html">HTML, CSS And DOM - Part 2</a></li>
+                    <li class="nav-item"><a href="t3-design-to-web-blog.html">Design To Web</a></li>
+                    <li class="nav-item"><a href="t4-javascript-basics.html">JavaScript Basics</a></li>
+                    <li class="nav-item"><a href="t5-problem-solving.html">Problem Solving</a></li>
+                    <li class="nav-item"><a href="t6-js-language.html">JS Language</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="../minesweeper/index.html">Play Minesweeper</a></li>
+        </ul>
+      </nav>
+
+    <!-- BLOG TEMPLATE CONTAINER -->
+    <section class="template-container">
+
+      <!-- BLOG HEADER SECTION -->
+      <section class="blog-header">
+        <img src="https://devacademy.co.nz/wp-content/uploads/2017/06/Dev-Academy-bikes.jpg" srcset="https://devacademy.co.nz/wp-content/uploads/2017/06/Dev-Academy-bikes.jpg 300w" sizes="100vw" alt="">
+        <h1 class="blog-title">JS Language</h1>
+      </section>
+
+      <!-- BLOG INFORMATION CONTAINER -->
+      <section class="blog-info-container end-section">
+        <ul>
+          <li class="blog-info-item">Technical Blog</li>
+          <li class="blog-info-item">Sprint 6.5</li>
+        </ul>
+      </section>
+
+      <!-- BLOG CONTENT CONTAINER -->
+      <section class="blog-content-container">
+        <article class="blog-article end-section">
+          <header class="blog-post-header"><h1>Describe use case for parenthese <code>()</code> in JavaScript</h1></header>
+          <div class="blog-text">
+              <p>
+                In JavaScript parenthese are used when defining a JavaScript function expression, when calling or running a function, passing values to a function to be processed or used and declaring a function that can run automatically also known as an Immediately Invokable Function Expression or IIFE.
+              </p>
+              <p>
+                For example, when defining a new function, parenthese are placed after the function keyword to declare an annonymous function <code>function()</code>, or placed after a function name <code>function doSomeThing()</code>. When defining a self invoking function or IIFE, parenthese are used to wrap the function declaration, after the function keyword or the function name and at the end of the declaration <code>(function(){ statement })()</code>.
+              </p>
+              <p>
+                When calling or running a function parenthese are used following the function keyword or function name <code>doSomeThing()</code> and when passing values into a function <code>doSomeThing(value)</code>. 
+              </p>
+          </div>
+        </article>
+        <article class="blog-article end-section">
+            <header class="blog-post-header"><h1>Describe the use case for brackets <code>[]</code> in JavaScript</h1></header>
+                <div class="blog-text">
+                    <p>
+                        In the Javascript language, brackets are used to define a new array or list which can be used to store information together in a comma separate list <code>let letters = [A,B,C,D,E,F,G]</code>. Brackets are also used to access all the items stored in the list using the items position within the list, for example to get the letter 'A' we use <code>letters[0]</code>.
+                    </p>
+                </div>
+            </article>
+        <article class="blog-article end-section">
+          <header class="blog-post-header"><h1>Describe the use case for braces <code>{}</code> in JavaScript</h1></header>
+          <div class="blog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minima fugit voluptas? Dolor fuga sunt ut at quae illo soluta reiciendis porro explicabo quo rem, aut provident totam atque optio!</div>
+        </article>
+        <article class="blog-article end-section">
+          <header class="blog-post-header"><h1>Describe the use case for single quotes <code>''</code> in JavaScript</h1></header>
+          <div class="blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam repellat voluptates odit quasi repudiandae eius. Perspiciatis dolore distinctio exercitationem blanditiis, fugit, architecto animi harum ex provident quidem dolorem error.</div>
+        </article>
+        <article class="blog-article end-section">
+          <header class="blog-post-header"><h1>Describe the use case for double quotes <code>""</code> in JavaScript</h1></header>
+          <div class="blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam repellat voluptates odit quasi repudiandae eius. Perspiciatis dolore distinctio exercitationem blanditiis, fugit, architecto animi harum ex provident quidem dolorem error.</div>
+        </article>
+      </section>
+
+    </section>
+    <!-- END: TEMPLATE CONTAINER -->
+
+    <!-- FOOTER SECTION -->
+    <footer>
+        <section class="footer-container">
+            <p>&copy; All right reserved 2018</p>
+        </section>
+    </footer>
+  </body>
+</html>
