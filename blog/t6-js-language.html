@@ -75,7 +75,7 @@
                 In JavaScript parenthese are used when defining a JavaScript function expression, when calling or running a function, passing values to a function to be processed or used and declaring a function that can run automatically also known as an Immediately Invokable Function Expression or IIFE.
               </p>
               <p>
-                For example, when defining a new function, parenthese are placed after the function keyword to declare an annonymous function <code>function()</code>, or placed after a function name <code>function doSomeThing()</code>. When defining a self invoking function or IIFE, parenthese are used to wrap the function declaration, after the function keyword or the function name and at the end of the declaration <code>(function(){ statement })()</code>.
+                For example, when defining a new function, parenthese are placed after the function keyword to declare an annonymous function <code>function()</code>, or placed after a function name <code>function doSomeThing()</code>. When defining a self invoking function or IIFE, parenthese are used to wrap the function declaration, after the function keyword or the function name and at the end of the declaration <code>(function(){ code to be run })()</code>.
               </p>
               <p>
                 When calling or running a function parenthese are used following the function keyword or function name <code>doSomeThing()</code> and when passing values into a function <code>doSomeThing(value)</code>. 
@@ -94,19 +94,32 @@
             <header class="blog-post-header"><h1>Describe the use case for braces <code>{}</code> in JavaScript</h1></header>
             <div class="blog-text">
                 <p>
-                    Braces are used in various use cases in the JavaScript language, for defining a code block within a function, if statement or loop to creating a  
+                    Braces are used in various use cases in the JavaScript language, for defining a block of code to be run together within a function, conditional statement or loop and when creating a JavaScript object.
+                </p>
+                <p>
+                    For example, when creating a function, the braces are placed at the end of the closing parenthese <code>function(){}</code> and any code to be run by the function is placed between the braces <code>{ code to be run }</code>. Similar to functions <code>while()</code>, <code>for()</code> and <code>foreach()</code> loops and <code>if()</code> statements use braces to execute blocks of code.  
+                </p>
+                <p>
+                    When creating a JavaScript object, braces are used to contain all the key value pairs of the object <code>let newObj = { "key": "value" }</code>.
                 </p>
             </div>
         </article>
         <article class="blog-article end-section">
           <header class="blog-post-header"><h1>Describe the use case for single quotes <code>''</code> in JavaScript</h1></header>
-          <div class="blog-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam repellat voluptates odit quasi repudiandae eius. Perspiciatis dolore distinctio exercitationem blanditiis, fugit, architecto animi harum ex provident quidem dolorem error.</div>
+          <div class="blog-text">
+            <p>
+                In the JavaScript language, single quotes can be used to define a string literal <code>'I am a string'</code>. Single quotes are commonly used in conjunction with double quotes when outputing any HTML mark-up with JavaScript variables <code>elem.innerHTML = '&lt;a href="' + someUrl + '"&gt;Link&lt;/a&gt;'</code>.
+            </p>
+            <p>
+                In JavaScript, there is no difference between single and double quotes. Both can be used in the same way except when generating JSON, where only double quotes are allowed when defining key value pairs.
+            </p>
+          </div>
         </article>
         <article class="blog-article end-section">
             <header class="blog-post-header"><h1>Describe the use case for double quotes <code>""</code> in JavaScript</h1></header>
             <div class="blog-text">
                 <p>
-
+                    Similar to single quotes, double quotes are used to define string literals, to output HTML mark-up, defining key value pairs in a Javascript object and generating JSON.
                 </p>
             </div>
         </article>
