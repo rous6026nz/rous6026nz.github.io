@@ -25,7 +25,7 @@
                 <a href="../index.html"><img src="http://via.placeholder.com/80x80" alt=""></a>
                 <a href="#nav-overlay" class="close-btn" role="button" aria-expanded="false" aria-label="Close Menu">&#x2573;</a>
             </li>
-            <li class="nav-item is_selected">Cultural
+            <li class="nav-item">Cultural
                 <ul class="dropdown" id="cultural">
                     <li class="nav-item"><a href="c1-reflection-blog.html">Reflection</a></li>
                     <li class="nav-item"><a href="c1-time-and-habits-blog.html">Time And Habits</a></li>
@@ -37,7 +37,7 @@
                     <li class="nav-item"><a href="c7-motivation.html">Motivation</a></li>
                 </ul>
             </li>
-            <li class="nav-item">Technical
+            <li class="nav-item is_selected">Technical
                 <ul class="dropdown" id="technical">
                     <li class="nav-item"><a href="t2-html-css-dom-p1.html">HTML, CSS And DOM - Part 1</a></li>
                     <li class="nav-item"><a href="t2-html-css-dom-p2.html">HTML, CSS And DOM - Part 2</a></li>
@@ -50,7 +50,7 @@
             </li>
             <li class="nav-item"><a href="../minesweeper/index.html">Play Minesweeper</a></li>
         </ul>
-    </nav>
+      </nav>
 
     <!-- BLOG TEMPLATE CONTAINER -->
     <section class="template-container">
@@ -58,47 +58,40 @@
       <!-- BLOG HEADER SECTION -->
       <section class="blog-header">
         <img src="https://devacademy.co.nz/wp-content/uploads/2017/06/Dev-Academy-bikes.jpg" srcset="https://devacademy.co.nz/wp-content/uploads/2017/06/Dev-Academy-bikes.jpg 300w" sizes="100vw" alt="">
-        <h1 class="blog-title">Time & Habit</h1>
+        <h1 class="blog-title">JavaScript Scope</h1>
       </section>
 
       <!-- BLOG INFORMATION CONTAINER -->
       <section class="blog-info-container end-section">
         <ul>
-          <li class="blog-info-item">Cultural Blog</li>
-          <li class="blog-info-item">Sprint 1.2</li>
+          <li class="blog-info-item">Technical Blog</li>
+          <li class="blog-info-item">Sprint 8.3</li>
         </ul>
       </section>
 
       <!-- BLOG CONTENT CONTAINER -->
       <section class="blog-content-container">
         <article class="blog-article end-section">
-          <header class="blog-post-header"><h1>Which timebox and habits techniques did I try?</h1></header>
+          <header class="blog-post-header"><h1>What 'scope' is, and how it works in JavaScript?</h1></header>
           <div class="blog-text">
-                <p>In the past, I have used a similar strategy similar to the Pomodoro technique, where I would identify my todo tasks, allocate time to each task, then begin work on each task stopping every 30 minutes for a 5 minute break to get a drink of water, go toilet or walk around the building.</p>
-                <p>The Pomodoro technique seems more structured, with accurate time keeping. It also helps with accurately defining timelines for each task, and breaking each task into sizable chunks of work.</p>
-            </div>
-        </article>
-        <article class="blog-article end-section">
-          <header class="blog-post-header"><h1>What did I find interesting?</h1></header>
-          <div class="blog-text">
-              <p><i>"Confidence is just displayed ability"</i></p>
-              <p>I found this very interesting because like the author of this blog highlighted we are always told "believe in yourself first, then you’ll achieve it", when in actual fact it made more sense to reverse this theory - which aligns more with his coaches theory.</p>
-              <p>I also found the article about "How mindfullness can improve productivity, focus and work life balance" interesting, talking about listening to the lizard brain and how although our brains have evovled, our lizard brains have not - still thinking of survival mode.</p>
-              <p>This shed light on some common behavior patterns observed in the workplace, on the sports field and in society, and sparked further thinking. Is the lizard brain more prominent in intraverted personalities? Does this mean that people who are more out spoken and confident have a more evolved lizard brains? Is having a more evolved lizard brain a good or bad thing?</p>
-          </div>
-        </article>
-        <article class="blog-article end-section">
-          <header class="blog-post-header"><h1>What worked for me?</h1></header>
-          <div class="blog-text">
-              <p>The Pomodoro technique is something which I feel will work will for me when tackling projects. I will also like to try meditation, I have never try meditation, but can image how it could help with clarative thinking and relieving stress levels.</p>
-              <p>In the past, when I came up against a blocker when programming, I would leave the computer and do something totally different - like go to the beach, and 9 times out of 10, I would find a solution either while I'm doing something else or when re-visiting the issue. It felt like although I wasn't thinking about the issue, my brain was subconsciously trying to solve the problem.</p>
-          </div>
-        </article>
-        <article class="blog-article end-section">
-          <header class="blog-post-header"><h1>Which will I experiment further with?</h1></header>
-          <div class="blog-text">
-              <p>I want to experiment with meditation, both focal and mindful. I was unknowingly performing meditation in the past while admiring the view from my desktop at work as well as while working through the bush walk next to my office.</p>
-              <p>I also want to experiement with the Pomodoro timeboxing technique as well.</p>
+            <p>
+                In the JavaScript programming language, "Scope" refers to the availability of a variable or function within a program. Variables and functions can be defined in two scopes within a JavaScript program, <em>local</em> and <em>global</em>. Depending on the context of it's creation determines accessibility of the variable or function within the code.
+            </p>
+            <h5>Global Scope</h5>
+            <p>
+                When a variable or function is defined in the <em>global</em> scope of a JavaScript program, it is accessible anywhere in the program. 
+            </p>
+            <h5>Local Scope</h5>
+            <p>
+                A variable or function defined within a function has a <em>local</em> scope, it is only accessible within the context of which it was created in. In JavaScript, if a variable is created within the local scope of a function without the uses of the "var" keyword, the program will look up a level out of the local scope of the function it is being created in, to see if the variable has been created up a level.
+            </p>
+            <p>
+                This will happen until the program has found the first instance of the variable creation or has reached the <em>global</em> scope of the program. If no instances of the variable are found, it will create the variable within the global scope of the program.
+            </p>
+            <h5>Lexical Scope</h5>
+            <p>
+                Also refered to as <em>static scope</em>, is when you have nested functions (functions created within another function), the inner functions are able to access variables within it's containing function.
+            </p>
           </div>
         </article>
       </section>
